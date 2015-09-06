@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		94F659491B9BFB74000B9001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F659481B9BFB74000B9001 /* AppDelegate.swift */; };
-		94F6594B1B9BFB74000B9001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F6594A1B9BFB74000B9001 /* ViewController.swift */; };
 		94F6594E1B9BFB74000B9001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F6594C1B9BFB74000B9001 /* Main.storyboard */; };
 		94F659501B9BFB74000B9001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F6594F1B9BFB74000B9001 /* Images.xcassets */; };
 		94F659531B9BFB74000B9001 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F659511B9BFB74000B9001 /* LaunchScreen.xib */; };
 		94F6595F1B9BFB74000B9001 /* TableViewAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F6595E1B9BFB74000B9001 /* TableViewAnimationTests.swift */; };
+		94F659691B9BFBFA000B9001 /* animationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F659681B9BFBFA000B9001 /* animationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		94F659431B9BFB74000B9001 /* TableViewAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F659471B9BFB74000B9001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F659481B9BFB74000B9001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94F6594A1B9BFB74000B9001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94F6594D1B9BFB74000B9001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94F6594F1B9BFB74000B9001 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		94F659521B9BFB74000B9001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		94F659581B9BFB74000B9001 /* TableViewAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F6595D1B9BFB74000B9001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F6595E1B9BFB74000B9001 /* TableViewAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimationTests.swift; sourceTree = "<group>"; };
+		94F659681B9BFBFA000B9001 /* animationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				94F659481B9BFB74000B9001 /* AppDelegate.swift */,
-				94F6594A1B9BFB74000B9001 /* ViewController.swift */,
+				94F659681B9BFBFA000B9001 /* animationTableViewController.swift */,
 				94F6594C1B9BFB74000B9001 /* Main.storyboard */,
 				94F6594F1B9BFB74000B9001 /* Images.xcassets */,
 				94F659511B9BFB74000B9001 /* LaunchScreen.xib */,
@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					94F659421B9BFB74000B9001 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = E56ATFSAWD;
 					};
 					94F659571B9BFB74000B9001 = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F6594B1B9BFB74000B9001 /* ViewController.swift in Sources */,
+				94F659691B9BFBFA000B9001 /* animationTableViewController.swift in Sources */,
 				94F659491B9BFB74000B9001 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -350,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
